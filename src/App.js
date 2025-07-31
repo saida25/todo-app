@@ -13,6 +13,8 @@ function Home({ tasks, deleteTask , clearTasks }) {
     <div>
       <h1>📋 Mes Tâches</h1>
       <Link to="/add">➕ Ajouter une tâche</Link>
+
+          <button onClick={clearTasks}>🧹 Tout effacer</button>
       <ul>
         {tasks.map((t, i) => (
           <li key={i}>
